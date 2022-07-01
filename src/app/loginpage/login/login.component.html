@@ -1,7 +1,7 @@
-<ion-grid class="ion-padding" >
-  <ion-row  >
+<ion-grid class="ion-padding">
+  <ion-row>
     <ion-col size-sm="6" offset-sm="3">
-      <ion-item >
+      <ion-item>
         <ion-label position="floating">User ID/Name :</ion-label>
         <ion-input type="text" value="vikas@gmail.com" #email></ion-input>
       </ion-item>
@@ -12,12 +12,17 @@
     </ion-col>
   </ion-row>
 </ion-grid>
-<ion-content class="ion-text-center" >
-  <ion-button  (click)="loggedIn()" color="success"  > Login </ion-button>
-  <ion-button color="secondary"> signup </ion-button>
-  <ion-item >
-    <ion-checkbox checked="true"></ion-checkbox>
-    <p class="ion-padding">Remember me?</p>
-  </ion-item>
+<ion-content class="ion-text-center">
+  <ion-grid>
+    <ion-row>
+      <ion-col  size-sm="6" offset-sm="3" >
+        <ion-button (click)="loggedIn()" color="success"> Login </ion-button>
+        <ion-button color="secondary"> signup </ion-button>
+        <ion-item>
+          <ion-checkbox checked="true"></ion-checkbox>
+          <p class="ion-padding">Remember me?</p>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>
-
