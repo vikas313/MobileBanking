@@ -1,0 +1,43 @@
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col size-sm="6" offset-sm="3" >
+        <ion-header>
+          <ion-toolbar>
+            <ion-title color="primary">Accounts</ion-title>
+          </ion-toolbar>
+        </ion-header>
+        <ion-card>
+          <ion-card-header> Savings Account </ion-card-header>
+          <ion-card-content>
+            <p>Total Amount</p>
+            <p>{{40 | currency}}</p>
+          </ion-card-content>
+        </ion-card>
+        <ion-card>
+          <ion-card-header>Demat Account</ion-card-header>
+          <ion-card-content>
+            holdings
+            <p>currently holdings are {{50 | currency}}</p>
+          </ion-card-content>
+        </ion-card>
+        <ion-card color="secondary">
+          <ion-card-title color="primary">Offers</ion-card-title>
+          <ion-card-content>
+            AMB- Monthly average balance <br />
+            Maintain atleast {{100 | currency}} to decrease the savings account
+            taxes
+          </ion-card-content>
+        </ion-card>
+        <ion-card color="success">
+          <ion-card-subtitle>Upgrade</ion-card-subtitle>
+          <ion-card-content
+            >Upgrade to our millenia card and enjoy top savings <br />
+            *taxes and charges apply <br />
+            *based on our relationship
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

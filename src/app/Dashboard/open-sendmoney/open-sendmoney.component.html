@@ -1,0 +1,37 @@
+
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col size-md="6" offset-md="3">
+        <ion-header>
+          <ion-toolbar>
+            <ion-title>Sending Money</ion-title>
+            <ion-buttons slot="primary">
+              <ion-button (click)="onCancel()">
+                <ion-icon slot="end" name="close-outline"></ion-icon>
+              </ion-button>
+            </ion-buttons>
+          </ion-toolbar>
+        </ion-header>
+        <ion-list>
+          <ion-title>My payees</ion-title>
+          <ion-item *ngFor="let payee of payees">
+            {{ payee }}
+            <ion-button slot="end" (click)="SendToPayee(payee)"
+              >Send</ion-button
+            >
+          </ion-item>
+        </ion-list>
+        <ion-card>
+          <ion-card-content>
+            <ion-text class="ion-padding"
+            >To send A new Payee please add it to payees on home page</ion-text
+          >
+          </ion-card-content>
+        </ion-card>
+
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
