@@ -6,6 +6,7 @@ import { HomePage } from './home.page';
 
 import { HomePageRoutingModule } from './home-routing.module';
 import { LoginComponent } from '../loginpage/login/login.component';
+import { SignupComponent } from '../loginpage/signup/signup.component';
 
 
 
@@ -17,6 +18,6 @@ import { LoginComponent } from '../loginpage/login/login.component';
     IonicModule,
     HomePageRoutingModule,
   ],
-  declarations: [HomePage,LoginComponent]
+  declarations: [HomePage,LoginComponent,SignupComponent]
 })
 export class HomePageModule {}

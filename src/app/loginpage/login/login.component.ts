@@ -7,8 +7,9 @@ import {
   ViewChild,
 } from '@angular/core';
 import { Router } from '@angular/router';
-import { AlertController } from '@ionic/angular';
+import { AlertController, ModalController } from '@ionic/angular';
 import { UserdataService } from 'src/app/userdata.service';
+import { SignupComponent } from '../signup/signup.component';
 
 @Component({
   selector: 'app-login',
@@ -19,7 +20,8 @@ export class LoginComponent implements OnInit {
   constructor(
     private router: Router,
     private userData: UserdataService,
-    private alertCtrl: AlertController
+    private alertCtrl: AlertController,
+    private modalCtrl: ModalController
   ) {}
   // eslint-disable-next-line @typescript-eslint/type-annotation-spacing
   @ViewChild('email') email: HTMLInputElement;
@@ -41,5 +43,14 @@ export class LoginComponent implements OnInit {
       this.userData.userName = this.email.value;
       this.router.navigateByUrl('wholepage/dashboard');
     }
+  }
+  signUp(){
+    this.modalCtrl.create({
+      component:SignupComponent
+    })
+    .then(modalEl=>{
+      modalEl.present();
+    });
+
   }
 }

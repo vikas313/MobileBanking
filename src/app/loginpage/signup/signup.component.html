@@ -1,0 +1,49 @@
+
+<ion-grid>
+  <ion-row>
+    <ion-col  >
+      <ion-header>
+        <ion-toolbar>
+        <ion-title>  Thanks for signing up!</ion-title>
+        <ion-buttons slot="primary">
+          <ion-button (click)="onCancel()">
+            <ion-icon slot="end" name="close-outline"></ion-icon>
+          </ion-button>
+        </ion-buttons>
+        </ion-toolbar>
+      </ion-header>
+
+        <ion-card>
+          <ion-card-header>please fill up form</ion-card-header>
+          <ion-card-content>
+            <form>
+            <ion-item>
+              <ion-label  position="floating">Name :</ion-label>
+              <ion-input  type="text"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label  position="floating" >Email: </ion-label>
+              <ion-input type="email" ></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label  position="floating" >DOB</ion-label>
+              <ion-input type="date" ></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label   >Image: </ion-label>
+              <ion-input type="file" ></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label   >ID: </ion-label>
+              <ion-input type="file" ></ion-input>
+            </ion-item>
+            <ion-item  >
+              <ion-button   type="submit" slot="end">Submit</ion-button>
+            </ion-item>
+          </form>
+          </ion-card-content>
+        </ion-card>
+
+    </ion-col>
+  </ion-row>
+</ion-grid>

@@ -59,12 +59,15 @@ export class DashboardPage implements OnInit {
   notsOnOff() {
     this.notifications = !this.notifications;
   }
-  contactUs(){
-        this.modalController.create({
-          component:ContactusComponent
-        })
-        .then(modelEl=>{
-          modelEl.present();
-        });
+  contactUs() {
+    this.modalController
+      .create({
+        component: ContactusComponent,
+      })
+      .then((modelEl) => {
+        modelEl.present();
+      });
   }
+
+
 }
